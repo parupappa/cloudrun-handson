@@ -14,6 +14,7 @@ spec:
         # TODO: change for your own vpc name
         run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"cnsrun-test-yokoo"}]'
         run.googleapis.com/vpc-access-egress: all-traffic
+        
     spec:
       containerConcurrency: 10
       timeoutSeconds: 300
