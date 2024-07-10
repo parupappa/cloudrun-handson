@@ -14,6 +14,7 @@ spec:
         run.googleapis.com/execution-environment: gen2
         #TODO: change for your own vpc name
         run.googleapis.com/network-interfaces: '[{"network":"cnsrun-app", "subnetwork":"cnsrun-test-yokoo"}]'
+        # この指定で、Direct VPC Egressが使用できる。https://cloud.google.com/run/docs/configuring/vpc-direct-vpc?hl=ja#yaml
         run.googleapis.com/vpc-access-egress: all-traffic
     spec:
       containerConcurrency: 10
